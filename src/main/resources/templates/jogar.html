@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jefferson Games</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style_jogo.css}">
+</head>
+<body>
+        <div 
+            <form class="" method="POST">
+ 
+
+ 	Nome: <input type="text" name="name"><br /><br />
+    Numero: <input type="number" name="numero" value="0"><br /><br />
+	<button type="submit">Jogar</button>
+             
+            </form
+        </div>
+
+    </div>
+
+    <div class="erro" th:each="erros : ${erros}">
+        <h2 th:text="${erros}"></h2>
+
+    </div>
+
+    <div class="mensagem" th:each="mensagem : ${mensagens}">
+        <h2 th:text="${mensagem}"></h2>
+    </div>
+
+</body>
+</html> 
